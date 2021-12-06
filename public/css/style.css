@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../css/fonts/Roboto-Black.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+.first-content {
+    background: rgb(255, 255, 255);
+    height: 35rem;
+    overflow: hidden;
+}
+
+svg {
+    z-index: -1;
+}
+
+.first-wave {
+    margin-top: -7rem;
+}
+
+.second-content {
+    position: relative;
+    margin-top: -3rem;
+    background: #c0d0f0;
+    /* overflow: hidden; */
+}
+
+.third-content {
+    position: relative;
+    margin-top: -5rem;
+    overflow: hidden;
+}
+
+.fourth-content {
+    position: relative;
+    margin-top: -5rem;
+    background: #c0d0f0;
+    /* overflow: hidden; */
+    height: 25rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#btn-top {
+    display: none;
+    color: rgb(8, 12, 241);
+    z-index: 99;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    /* background-color: red; Set a background color */
+}
+
+#btn-top:hover {
+    color: rgb(33, 34, 109);
+}
+
+.navbar {
+    transition: 0.2s ease-in;
+    position: fixed;
+    overflow: hidden;
+    background: #ffffff00;
+    display: block;
+    width: 100%;
+    height: 4rem;
+    z-index: 99;
+    /* padding: 1rem 1.5rem;  */
+}
+
+.navbar.scrolled {
+    background: #000000;
+}
+
+.navbar.scrolled > .nav-menu li a {
+    color: rgb(255, 255, 255);
+    /* display: none; */
+}
+
+.navbar.scrolled > .nav-menu li a hr {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.nav-menu {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.job {
+    font-style: italic;
+    color: rgb(71, 71, 71);
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.line-navbar {
+    margin-top: -0.05rem;
+
+    background-color: rgb(0, 3, 180);
+    color: rgb(0, 3, 180);
+    visibility: hidden;
+}
+
+.nav-item {
+    /* margin-left: 5rem; */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:active {
+    color: #000000 !important;
+}
+
+.about-me-btn,
+.show-github-btn {
+    margin-top: 2rem;
+    box-shadow: 0px 0px 10px rgba(70, 106, 204, 0.685);
+}
+
+.nav-link:hover {
+    /* color: #5244ad; */
+    color: rgb(0, 0, 0);
+}
+
+.nav-link:hover > .line-navbar {
+    visibility: visible;
+}
+
+.line-about.past-main{
+    visibility: visible;
+}
+
+.line-projects.past-main{
+    visibility: visible;
+}
+
+.line-contactme.past-main{
+    visibility: visible;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.row-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-project {
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+}
+
+.img-project {
+    transition: transform 0.5s ease !important;
+}
+
+.item-project:hover > .img-project {
+    transform: scale(1.2) !important;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+}
+
+.text-contactme {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-contactme > div{
+    margin: 3rem;
+}
+
+.instagram-link{
+    color: #d66053;
+}
+
+.instagram-title{
+    visibility: hidden;
+    color: #d66053;
+}
+
+.instagram-link:hover{
+    color: #a34338;
+}
+
+.instagram-link:hover + .instagram-title{
+    visibility: visible;
+}
+
+.email-title{
+    visibility: hidden;
+}
+
+.email-link:hover + .email-title{
+    visibility: visible;
+}
+
+.whatsapp-link{
+    color: #3bb86f;
+}
+
+.whatsapp-link:hover{
+    color: #316823;
+}
+
+.whatsapp-title{
+    color: #3bb86f;
+    visibility: hidden;
+}
+
+.whatsapp-link:hover + .whatsapp-title{
+    visibility: visible;
+}
+
+.linkedin-title{
+    visibility: hidden;
+}
+
+.linkedin-link:hover + .linkedin-title{
+    visibility: visible;
+}
+
+.second-content.add-margin{
+    padding-top: 5rem;
+}
+
+.third-content.add-margin{
+    padding-top: 5rem;
+}
+
+footer{
+    background: rgb(75, 75, 75);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
